@@ -1,0 +1,31 @@
+import java.util.Scanner; //imports the util scanner
+
+public class Food { //creates a PUBLIC class called food 
+	public static void main(String[] args) { //makes a string
+		Scanner myObj = new Scanner(System.in); //makes a new Scanner 
+		System.out.println("What is your favorite food?"); //Asks person for favoritre food 
+		String ffood = myObj.nextLine(); //pulls answer from next line under name of ffood
+		System.out.println("Guess what? My favorite food is also " + ffood + "! What do you like to drink with " + ffood + "?"); //prints text
+		String fdrink = myObj.nextLine(); //pulls answer from next line under fdrink
+		System.out.println("Wow! " + ffood + " and " + fdrink + " sound delicious together!"); //prints text
+		System.out.println("How many times a day do you eat?"); //prints text
+		String num = myObj.nextLine(); 
+		int numfinal = 1095; // sets an amount for the final number
+		System.out.println("That means you eat " + numfinal + " times a year!"); //prints text
+		int meals = 1095; // sets amount of meals to 1095
+		if (meals > 1000) { //start of an if else - if the meals are greater than 1000
+		  System.out.println("That is a healthy ammount of meals to be eating"); //prints text
+		} else { //if the if is not true
+			System.out.println("That is not a healthy ammount of meals to be eating."); //prints text 
+			System.out.println("How many times a day do you drink water?"); //prints text
+			String ddrink = myObj.nextLine(); //pulls answer from next line under name of ffood
+			boolean drinks = false; //boolean variable 
+			while (drinks = false) { //while loop
+			 System.out.println("You need to be drinking more water"); //while drinks are false - it prints this line
+			  
+		  }
+		  
+		}
+	}
+	
+}
